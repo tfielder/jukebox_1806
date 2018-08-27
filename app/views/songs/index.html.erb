@@ -1,8 +1,14 @@
 <h1>All Songs</h1>
 
-<% @songs.each do |song| %>
-  <ul>
-    <li>Title: <%= song.title %></li>
-    <li>Play Count: <%= song.play_count %></li>
-  </ul>
-<% end %>
+<div class="all-songs">
+  <% @songs.each do |song| %>
+  <div class='divider'>
+    <ul>
+      <img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/MdhuWOx/close-up-dolly-shot-of-a-vintage-record-player-playing-a-vinyl-record-rack-focus_4gvh-cljg__F0013.png" alt="record" />
+      <li>Title: <%= song.title %></li>
+      <li>Play Count: <%= song.play_count %></li>
+    </ul>
+  </div>
+  <% end %>
+</div>
+
